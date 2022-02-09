@@ -1,1 +1,1 @@
-Programming excersize related to inheritance in IDATT2001.
+Programming exercise related to inheritance in IDATT2001.
