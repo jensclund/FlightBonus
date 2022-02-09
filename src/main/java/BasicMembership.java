@@ -1,7 +1,6 @@
 
-
 /**
- * The Basic membership of the Membership levels.
+ * The Basic membership level.
  *
  * @author jensl
  */
