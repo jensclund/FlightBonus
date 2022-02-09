@@ -1,11 +1,11 @@
 
 
 /**
- * The Superclass Membership.
+ * The Basic membership of the Membership levels.
  *
  * @author jensl
  */
-public abstract class Membership {
+public class BasicMembership extends Membership {
 
     /**
      * Method for calculating a new balance for bonus points accumulated by the member.
@@ -15,13 +15,17 @@ public abstract class Membership {
      * @param newPoints          New points to register.
      * @return The new bonus points balance.
      */
-    public abstract int registerPoints(int bonusPointsBalance, int newPoints);
-
+    @Override
+    public int registerPoints(int bonusPointsBalance, int newPoints) {
+        return bonusPointsBalance + newPoints;
+    }
     /**
      * Gets membership name of the current level of the membership.
      *
      * @return The name of the membership
      */
-    public abstract String getMembershipName();
-
+    @Override
+    public String getMembershipName() {
+        return "Basic";
+    }
 }
